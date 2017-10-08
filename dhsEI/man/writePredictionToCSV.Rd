@@ -14,7 +14,7 @@ writePredictionToCSV(dframe, dpath = "", sname = "myName")
 \item{sname}{stem of file name, not including "CSV"}
 }
 \value{
-nothing, file is stored
+string, name of filename stored
 }
 \description{
 Write my dataframe format to required output formate

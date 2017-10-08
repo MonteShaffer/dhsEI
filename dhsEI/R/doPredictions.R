@@ -1,13 +1,10 @@
-# write Predictions to File
-
 #' Write my dataframe format to required output formate
 #'
 #' @param dframe my data frame, see data("stage1") for sample
 #' @param dpath path to write to file
 #' @param sname stem of file name, not including "CSV"
 #'
-#' @return nothing, file is stored
-
+#' @return string, name of filename stored
 writePredictionToCSV = function(dframe,dpath="",sname="myName")
 {
 
@@ -32,7 +29,7 @@ filename = paste(dpath,sname,".csv",sep="");
             cat(myStr, file=filename,append=T,fill=T,sep="");
             }
         }
-
+    filename;
 }
 
 
@@ -56,7 +53,9 @@ data("stage1");
     mdata = stage1;
     mdata[,2:18] = prob;
      
-    setwd("P:/_.github._/dhsEI/dhsEI/example/trials/submit1");
+   # setwd("P:/_.github._/dhsEI/dhsEI/example/trials/submit1");
+   # setwd("/data/R_data/_DHS_");
+    
     
     writePredictionToCSV(mdata,"",paste("uniform_probability_",prob,sep=""));
 }
@@ -79,7 +78,8 @@ data("stage1");
         mdata[,i] = means[i-1];
     }
     
-    setwd("P:/_.github._/dhsEI/dhsEI/example/trials/submit1")
+    # setwd("P:/_.github._/dhsEI/dhsEI/example/trials/submit1");
+    # setwd("/data/R_data/_DHS_");
     
     writePredictionToCSV(mdata,"","mean_probability");
 }
