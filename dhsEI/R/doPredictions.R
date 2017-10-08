@@ -58,9 +58,15 @@ predictUniformProbability = function(prob=0.5)
 {
     
 data("stage1");
+data("train1");
     
     mdata = stage1;
     mdata[,2:18] = prob;
+    
+    # truncate to train1 length (train1 and stage1 are independent)
+    mdata[1:100,1] = train1;
+    mdata = mdata[1:100,];
+    
      
    # setwd("P:/_.github._/dhsEI/dhsEI/example/trials/submit1");
    # setwd("/data/R_data/_DHS_");
@@ -80,12 +86,18 @@ predictMeanProbability = function()
 {
     
 data("stage1");
+data("train1");
     mdata = stage1;
     means = as.numeric( plyr::colwise(mean)(mdata[,2:18]) );
     for(i in 2:18)
         {
         mdata[,i] = means[i-1];
-    }
+        }
+    
+    # truncate to train1 length (train1 and stage1 are independent)
+        mdata[1:100,1] = train1;
+    mdata = mdata[1:100,];
+    
     
     # setwd("P:/_.github._/dhsEI/dhsEI/example/trials/submit1");
     # setwd("/data/R_data/_DHS_");
