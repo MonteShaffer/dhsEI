@@ -1,0 +1,37 @@
+ImageMagick in R
+https://cran.r-project.org/web/packages/magick/vignettes/intro.html
+
+http://jetlaggin.com/hilarious-airport-fails-just-in-time-for-summer-vacation/37/
+
+
+https://en.wikipedia.org/wiki/Millimeter_wave_scanner
+Millimeter wave scanners also have problems reading through sweat, in addition to yielding false positives from buttons and folds in clothing.[25] Some countries, such as Germany, have reported a false-positive rate of 54%.[26]
+
+
+
+
+
+https://en.wikipedia.org/wiki/Automatic_target_recognition
+
+
+http://decsai.ugr.es/pi/pmmwi/testdata.html
+
+
+
+
+root@aam:/data/R_data/_DHS_/rawdata# mkdir sample
+root@aam:/data/R_data/_DHS_/rawdata# mkdir stage1_aps
+root@aam:/data/R_data/_DHS_/rawdata# tar zxvf s
+sample/            sample.tar.gz      stage1_aps/        stage1_aps.tar.gz
+root@aam:/data/R_data/_DHS_/rawdata# tar zxvf sample.tar.gz -C ./sample/
+
+https://stackoverflow.com/questions/15744023/how-to-extract-filename-tar-gz-file
+
+root@aam:/data/R_data/_DHS_/rawdata# mv sample.tar.gz sample.tar
+root@aam:/data/R_data/_DHS_/rawdata# tar xvf sample.tar -C ./sample/
+
+
+root@aam:/data/R_data/_DHS_/rawdata# tar zxvf stage1_aps.tar.gz -C ./stage1_aps/
+
+
+
