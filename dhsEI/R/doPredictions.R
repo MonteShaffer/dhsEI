@@ -1,4 +1,4 @@
-# doPredictions
+# write Predictions to File
 
 #' Write my dataframe format to required output formate
 #'
