@@ -64,7 +64,8 @@ copy a3daps as well
 library(devtools);
 devtools::install_github("MonteShaffer/dhsEI", subdir="dhsEI");
 
-library(dhsEI);     # ls("package:dhsEI");
+library(dhsEI);     
+ls("package:dhsEI");
 
 
 setwd("/data/R_data/_DHS_");
