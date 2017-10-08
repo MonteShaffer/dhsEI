@@ -17,8 +17,8 @@ data.aps as raw.Rda
 header.aps as header.Rda
 }
 \examples{
-buildRawProfileAPS("/data/R_data/_DHS_/aps/sample/");
 
+buildRawProfileAPS("/data/R_data/_DHS_/aps/sample/");
 buildRawProfileAPS("/data/R_data/_DHS_/aps/stage1/");
 
 }

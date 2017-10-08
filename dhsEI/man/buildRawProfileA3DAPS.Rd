@@ -17,8 +17,8 @@ data.a3daps as raw.Rda
 header.a3daps as header.Rda
 }
 \examples{
-buildRawProfileA3DAPS("/data/R_data/_DHS_/a3daps/sample/");
 
+buildRawProfileA3DAPS("/data/R_data/_DHS_/a3daps/sample/");
 buildRawProfileA3DAPS("/data/R_data/_DHS_/a3daps/stage1/");
 
 }

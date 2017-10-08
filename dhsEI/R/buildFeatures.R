@@ -119,3 +119,13 @@ buildAnimation = function(rkey,rtype="aps")
       
     
 }
+
+
+
+
+
+# data("stage1");
+
+
+
+

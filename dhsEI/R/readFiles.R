@@ -165,8 +165,9 @@ read_data <- function(fname) {
 #' @return nothing
 #' @export
 #'
-#' @examples buildRawProfileAPS("/data/R_data/_DHS_/aps/sample/");
+#' @examples 
 #' 
+#' buildRawProfileAPS("/data/R_data/_DHS_/aps/sample/");
 #' buildRawProfileAPS("/data/R_data/_DHS_/aps/stage1/");
 #' 
 buildRawProfileAPS = function(aps_dir)
@@ -232,8 +233,9 @@ buildRawProfileAPS = function(aps_dir)
 #' @return nothing
 #' @export
 #'
-#' @examples buildRawProfileA3DAPS("/data/R_data/_DHS_/a3daps/sample/");
+#' @examples 
 #' 
+#' buildRawProfileA3DAPS("/data/R_data/_DHS_/a3daps/sample/");
 #' buildRawProfileA3DAPS("/data/R_data/_DHS_/a3daps/stage1/");
 #' 
 buildRawProfileA3DAPS = function(a3daps_dir)
@@ -255,7 +257,7 @@ buildRawProfileA3DAPS = function(a3daps_dir)
         
         print("#####################################");
         myFile = paste(a3daps_dir,f,sep="");
-        myExt = file_ext(myFile);
+        myExt = tools::file_ext(myFile);
         myStem = gsub(paste(".",myExt,sep=''),"",f);
         
         dFolder = paste("/data/R_data/_DHS_/profiles",myStem,"",sep="/");

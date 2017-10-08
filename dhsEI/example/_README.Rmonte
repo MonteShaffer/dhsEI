@@ -16,7 +16,7 @@ https://en.wikipedia.org/wiki/Automatic_target_recognition
 
 http://decsai.ugr.es/pi/pmmwi/testdata.html
 
-
+# http://www.fmwconcepts.com/imagemagick/edges/index.php
 
 
 root@aam:/data/R_data/_DHS_/rawdata# mkdir sample
@@ -32,6 +32,13 @@ root@aam:/data/R_data/_DHS_/rawdata# tar xvf sample.tar -C ./sample/
 
 
 root@aam:/data/R_data/_DHS_/rawdata# tar zxvf stage1_aps.tar.gz -C ./stage1_aps/
+
+
+    # tar zxvf stage1_a3daps.tar.gz -C ./stage1_a3daps/
+    # ls -1 ./stage1_a3daps | wc -l  # count progress
+
+
+
 
 # copied to /data/R_data/_DHS_/aps/
     ./sample/
