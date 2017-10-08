@@ -188,7 +188,7 @@ buildRawProfileAPS = function(aps_dir)
             
             print("#####################################");
         myFile = paste(aps_dir,f,sep="");
-        myExt = file_ext(myFile);
+        myExt = tools::file_ext(myFile);
         myStem = gsub(paste(".",myExt,sep=''),"",f);
         
         dFolder = paste("/data/R_data/_DHS_/profiles",myStem,"",sep="/");

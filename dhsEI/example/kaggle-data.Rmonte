@@ -84,7 +84,7 @@ XAxis, 1320, Nx=900, Lx=451.8 degrees
 Frequency, 1080000, Nf=512, Freq=10-40 GHz
 The raw data is captured as follows. A synthetic focusing algorithm performs a waveform calibration operation as the first step. The algorithm combines a set of pre-scan calibrations files to reduce the effect of common mode direct coupling signals and to align the phase component of each waveform captured from each of the array elements. The result of this operation is a calibrated version of the raw data in units of volts. The data is complex floating point words ordered in frequency planes.
 
-Competition File Descriptions
+Competition File Descriptions 
 
 Every scan in the dataset has a unique (hashed) Id. Every Id will have four associated image files, grouped into folders by their type.
 
