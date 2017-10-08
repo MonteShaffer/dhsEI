@@ -67,6 +67,10 @@ devtools::install_github("MonteShaffer/dhsEI", subdir="dhsEI");
 library(dhsEI);     # ls("package:dhsEI");
 
 
+setwd("/data/R_data/_DHS_");
+
+
+
 
 https://www.tsa.gov/blog/2013/01/02/body-scanner-resolution-rooms-conduct-privacy
 http://www.nuctech.com/en/SitePages/ThNormalPage.aspx?nk=TECH&k=BDEGAD

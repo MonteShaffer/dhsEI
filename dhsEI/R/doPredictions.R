@@ -3,10 +3,14 @@
 #' @param dframe my data frame, see data("stage1") for sample
 #' @param dpath path to write to file
 #' @param sname stem of file name, not including "CSV"
+#' @param trainme if true, we truncate to only the 100 training elements
 #'
 #' @return string, name of filename stored
-writePredictionToCSV = function(dframe,dpath="",sname="myName")
+writePredictionToCSV = function(dframe,dpath="",sname="myName",trainme=T)
 {
+    
+    
+    data("train1"); # has 100 unique values
 
 if(dpath==""){ dpath = paste(getwd(),"",sep="/"); }  # has trailing slash
 filename = paste(dpath,sname,".csv",sep="");   
@@ -18,6 +22,11 @@ filename = paste(dpath,sname,".csv",sep="");
     for(i in 1:ilen)
         {
         ro = dframe[i,];
+        # is id in train1
+        if(trainme == T && !is.element(ro$id,train1))
+            {
+            next;
+            }
         myStem = paste(ro$id,"_","Zone",sep="");
         for(j in 1:17)
             {

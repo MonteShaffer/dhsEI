@@ -4,7 +4,7 @@
 \alias{writePredictionToCSV}
 \title{Write my dataframe format to required output formate}
 \usage{
-writePredictionToCSV(dframe, dpath = "", sname = "myName")
+writePredictionToCSV(dframe, dpath = "", sname = "myName", trainme = T)
 }
 \arguments{
 \item{dframe}{my data frame, see data("stage1") for sample}
@@ -12,6 +12,8 @@ writePredictionToCSV(dframe, dpath = "", sname = "myName")
 \item{dpath}{path to write to file}
 
 \item{sname}{stem of file name, not including "CSV"}
+
+\item{trainme}{if true, we truncate to only the 100 training elements}
 }
 \value{
 string, name of filename stored
