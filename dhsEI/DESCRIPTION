@@ -1,0 +1,29 @@
+Package: dhsEI
+Title: DHS prediction
+Version: 0.0.0.9000
+Authors@R: person("Monte", "Shaffer", email = "monte.shaffer@gmail.com", role = c("aut", "cre"))
+Description: 
+  DHS Challenge - Team EInstEIn R package
+  This package contains information necessary for the DHS Challenge.
+  * Download the Files From Synapse
+  * Organize the Downloaded Data into LocalCache
+  * Parse the Data into R Objects
+  * Build Feature Variables For Challenge Testing
+  * Submit Feature Selection to Synapse Challenge
+Depends: R (>= 3.4.1)
+Imports:
+  graphics,
+  jsonlite,
+  readr,
+  ggplot2,
+  digest,
+  plyr,
+  pracma,
+  pastecs,
+  tractor.base,
+  IDPmisc,
+  corrplot
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
