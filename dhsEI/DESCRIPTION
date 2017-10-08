@@ -22,7 +22,9 @@ Imports:
   pastecs,
   tractor.base,
   IDPmisc,
-  corrplot
+  corrplot,
+  tools,
+  animation
 License: MIT
 Encoding: UTF-8
 LazyData: true

@@ -33,5 +33,17 @@ root@aam:/data/R_data/_DHS_/rawdata# tar xvf sample.tar -C ./sample/
 
 root@aam:/data/R_data/_DHS_/rawdata# tar zxvf stage1_aps.tar.gz -C ./stage1_aps/
 
+# copied to /data/R_data/_DHS_/aps/
+    ./sample/
+    ./stage1/
+    
+# analysis stored within:
+    /data/R_data/_DHS_/profiles/ [md5]
+    
+    
+copy a3daps as well
 
+
+    
+    
 
