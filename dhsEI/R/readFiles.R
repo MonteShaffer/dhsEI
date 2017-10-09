@@ -288,4 +288,37 @@ buildRawProfileA3DAPS = function(a3daps_dir)
 }
 
 
+#' Load Data from submission, based on type
+#'
+#' @param rkey unique scan (md5)
+#' @param rtype file type "aps" or "a3daps" (low / hi resolution)
+#'
+#' @return list of two elements $raw and $header
+#' @export
+#'
+#' @examples 
+#' loadData("0367394485447c1c3485359ba71f52cb","a3daps");
+#' loadData("0367394485447c1c3485359ba71f52cb","aps");
+loadData = function(rkey,rtype="a3daps")
+{
+    
+dlist = list();
+
+dFolder = paste("/data/R_data/_DHS_/profiles",rkey,"",sep="/");
+if(rtype=="aps")
+    {
+        dData = paste(dFolder,"raw.Rda",sep='');
+            load(dData); dlist$raw = data.aps;
+        hData = paste(dFolder,"header.Rda",sep='');
+            load(hData); dlist$header = header.aps;
+    } else if(rtype=="a3daps")
+        {
+            hData = paste(dFolder,"headerA3D.Rda",sep='');
+                load(dData); dlist$raw = data.a3daps;
+            dData = paste(dFolder,"rawA3D.Rda",sep='');
+                load(hData); dlist$header = header.a3daps;
+        }
+
+dlist;
+}
 

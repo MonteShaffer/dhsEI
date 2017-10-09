@@ -140,7 +140,7 @@ predictMeanProbabilityPsych9 = function(prob=0.038)
     # setwd("P:/_.github._/dhsEI/dhsEI/example/trials/submit1");
     # setwd("/data/R_data/_DHS_");
     
-    writePredictionToCSV(mdata,"",paste("mean_probability_9",prob,sep=""));
+    writePredictionToCSV(mdata,"",paste("mean_probability_9_",prob,sep=""));
     
     
     
