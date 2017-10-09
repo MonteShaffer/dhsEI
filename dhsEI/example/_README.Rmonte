@@ -70,6 +70,25 @@ ls("package:dhsEI");
 
 setwd("/data/R_data/_DHS_");
 
+# ImageMagick is difficult
+# http://www.wizards-toolkit.org/discourse-server/viewtopic.php?t=24398
+# http://www.imagemagick.org/discourse-server/viewtopic.php?t=25993
+# http://profiles.mshaffer.com/86d97d6bb6bbfd6542954ebbdb2ff28e/animation/a3daps/86d97d6bb6bbfd6542954ebbdb2ff28e.html
+# findContours
+
+# http://web.eecs.umich.edu/~silvio/teaching/EECS598/lectures/lecture10_3.pdf
+# library(PET); # hough transform
+# GRASS GIS
+
+# http://r.789695.n4.nabble.com/Exporting-an-rgl-graph-td1872712.html
+# https://cran.r-project.org/web/packages/animation/animation.pdf
+    # rgl.snapshot
+
+#' buildAnimations("aps");
+#' buildAnimations("a3daps");
+
+
+
 
 
 

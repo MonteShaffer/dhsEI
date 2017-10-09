@@ -69,8 +69,8 @@ buildAnimation = function(rkey,rtype="aps")
     
     hinfo = dinfo = NULL;
     
-    #if(!file.exists(rHTML))  # force rebuild
-    if(1==1)
+    if(!file.exists(rHTML))  
+    #if(1==1)                   # force rebuild
         {
             
         if(rtype=="aps")
