@@ -107,3 +107,50 @@ data("train1");
 
 
 
+
+#' Prediction based on mean of training set (with zone-9 offset)
+#'
+#' @param prob probability for zone-9
+#'
+#' @return nothing, stores file in dhsEI/dhsEI/example/trials/submit1
+#' @export
+#'
+#' @examples 
+#' predictMeanProbabilityPsych9(0.038);
+#' predictMeanProbabilityPsych9(0.05);
+predictMeanProbabilityPsych9 = function(prob=0.038)
+{
+    
+    data("stage1");
+    data("train1");
+    mdata = stage1;
+    means = as.numeric( plyr::colwise(mean)(mdata[,2:18]) );
+    for(i in 2:18)
+    {
+        mdata[,i] = means[i-1];
+    }
+    
+    # truncate to train1 length (train1 and stage1 are independent)
+    mdata[1:100,1] = train1;
+    mdata = mdata[1:100,];
+    
+    mdata[,10] = prob;
+    
+    
+    # setwd("P:/_.github._/dhsEI/dhsEI/example/trials/submit1");
+    # setwd("/data/R_data/_DHS_");
+    
+    writePredictionToCSV(mdata,"",paste("mean_probability_9",prob,sep=""));
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
