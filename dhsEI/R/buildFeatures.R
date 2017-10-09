@@ -14,6 +14,7 @@ buildAnimations = function(rtype="aps")
     
     dFolder = "/data/R_data/_DHS_/profiles";
     folders = list.dirs(path=dFolder, recursive=F, full.names=F);
+    folders = sample(folders); # randomize
     flen = length(folders);
     for(i in 1:flen)
     {
@@ -68,7 +69,8 @@ buildAnimation = function(rkey,rtype="aps")
     
     hinfo = dinfo = NULL;
     
-    if(!file.exists(rHTML))
+    #if(!file.exists(rHTML))  # force rebuild
+    if(1==1)
         {
             
         if(rtype=="aps")
@@ -96,7 +98,9 @@ buildAnimation = function(rkey,rtype="aps")
         animation::saveHTML(
                 for(i in 1:nr)
                 {
-                    image(dinfo[,,i])
+                    #image(dinfo[,,i])
+                    image(dinfo[,,i], col  = gray((0:256)/256) );
+                    #image(dinfo[,,i], col  = terrain.colors(256) );
                 },
                 
                 img.name = paste( rkey ,"_",sep=""), 

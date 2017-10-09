@@ -297,8 +297,8 @@ buildRawProfileA3DAPS = function(a3daps_dir)
 #' @export
 #'
 #' @examples 
-#' loadData("0367394485447c1c3485359ba71f52cb","a3daps");
-#' loadData("0367394485447c1c3485359ba71f52cb","aps");
+#' dlist = loadData("0367394485447c1c3485359ba71f52cb","a3daps");
+#' dlist = loadData("0367394485447c1c3485359ba71f52cb","aps");
 loadData = function(rkey,rtype="a3daps")
 {
     

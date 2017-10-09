@@ -18,6 +18,6 @@ list of two elements $raw and $header
 Load Data from submission, based on type
 }
 \examples{
-loadData("0367394485447c1c3485359ba71f52cb","a3daps");
-loadData("0367394485447c1c3485359ba71f52cb","aps");
+dlist = loadData("0367394485447c1c3485359ba71f52cb","a3daps");
+dlist = loadData("0367394485447c1c3485359ba71f52cb","aps");
 }
